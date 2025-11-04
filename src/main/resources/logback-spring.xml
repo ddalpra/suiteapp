@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- Include Spring Boot's default configurations -->
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+
+    <!-- Appender for Console Output -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+            <charset>utf8</charset>
+        </encoder>
+    </appender>
+
+    <!-- Appender for Database Logging -->
+    <appender name="DB" class="ch.qos.logback.classic.db.DBAppender">
+        <!-- Let Spring Boot inject its managed DataSource. This is more efficient as it uses the connection pool. -->
+        <connectionSource class="ch.qos.logback.core.db.DataSourceConnectionSource">
+        </connectionSource>
+    </appender>
+
+    <!-- Root logger configuration -->
+    <root level="INFO">
+        <!-- Send logs to both Console and Database -->
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="DB"/>
+    </root>
+
+</configuration>

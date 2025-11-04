@@ -1,4 +1,4 @@
-package it.dalpra.acme.erpapp.common.entity;
+package it.dalpra.acme.suiteapp.common.entity;
 
 import java.time.LocalDateTime;
 import java.util.UUID;

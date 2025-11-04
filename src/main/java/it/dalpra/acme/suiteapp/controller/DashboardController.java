@@ -1,4 +1,4 @@
-package it.dalpra.acme.erpapp.controller;
+package it.dalpra.acme.suiteapp.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

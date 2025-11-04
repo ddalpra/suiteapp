@@ -1,6 +1,6 @@
-package it.dalpra.acme.erpapp.externalservice.entity;
+package it.dalpra.acme.suiteapp.externalservice.entity;
 
-import it.dalpra.acme.erpapp.common.entity.BaseEntity;
+import it.dalpra.acme.suiteapp.common.entity.BaseEntity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;

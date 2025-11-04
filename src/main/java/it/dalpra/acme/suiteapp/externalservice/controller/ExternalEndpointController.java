@@ -1,10 +1,11 @@
-package it.dalpra.acme.erpapp.externalservice.controller;
+package it.dalpra.acme.suiteapp.externalservice.controller;
 
-import it.dalpra.acme.erpapp.externalservice.entity.ExternalEndpoint;
-import it.dalpra.acme.erpapp.externalservice.service.ExternalEndpointService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+
+import it.dalpra.acme.suiteapp.externalservice.entity.ExternalEndpoint;
+import it.dalpra.acme.suiteapp.externalservice.service.ExternalEndpointService;
 
 import java.util.UUID;
 

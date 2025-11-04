@@ -1,4 +1,4 @@
-package it.dalpra.acme.erpapp.externalservice.service;
+package it.dalpra.acme.suiteapp.externalservice.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,9 @@ import java.util.UUID;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
-import it.dalpra.acme.erpapp.externalservice.entity.ExternalEndpoint;
-import it.dalpra.acme.erpapp.externalservice.repository.ExternalEndpointRepository;
+
+import it.dalpra.acme.suiteapp.externalservice.entity.ExternalEndpoint;
+import it.dalpra.acme.suiteapp.externalservice.repository.ExternalEndpointRepository;
 
 @Service
 public class ExternalEndpointService {
