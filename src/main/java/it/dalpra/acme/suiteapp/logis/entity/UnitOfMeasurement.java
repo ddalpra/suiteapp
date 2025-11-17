@@ -9,9 +9,11 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Entity
 @Table(name = "unit_of_measurement")
+@EqualsAndHashCode(callSuper = false)
 @Data
 public class UnitOfMeasurement {
     

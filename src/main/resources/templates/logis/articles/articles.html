@@ -77,10 +77,10 @@
                         <tr>
                             <td th:text="${article.codeArticle}"></td>
                             <td th:text="${article.description}"></td>
-                            <td th:text="${article.um?.name}"></td>
-                            <td th:text="${article.family?.name}"></td>
-                            <td th:text="${article.subFamily?.name}"></td>
-                            <td th:text="${article.commodityGroup?.name}"></td>
+                            <td th:text="${article.um?.code}"></td>
+                            <td th:text="${article.family?.description}"></td>
+                            <td th:text="${article.subFamily?.description}"></td>
+                            <td th:text="${article.commodityGroup?.description}"></td>
                             <td>
                                 <a th:href="@{/logis/articles/edit/{id}(id=${article.id})}" class="btn btn-sm btn-primary">Edit</a>
                                 <a th:href="@{/logis/articles/delete/{id}(id=${article.id})}" class="btn btn-sm btn-danger">Delete</a>
@@ -104,7 +104,7 @@
                                     </thead>
                                     <tbody>
                                     <tr th:each="unit : ${article.articleUnits}">
-                                        <td th:text="${unit.unitOfMeasurement.description}"></td>
+                                        <td th:text="${unit.um.description}"></td>
                                         <td th:text="${unit.conversionFactor}"></td>
                                         <td th:text="${unit.status}"></td>
                                         <td>

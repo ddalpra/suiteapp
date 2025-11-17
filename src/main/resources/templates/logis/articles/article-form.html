@@ -112,7 +112,7 @@
                   </thead>
                   <tbody>
                   <tr th:each="unit : ${article.articleUnits}">
-                    <td th:text="${unit.unitOfMeasurement.description}"></td>
+                    <td th:text="${unit.um.description}"></td>
                     <td th:text="${unit.conversionFactor}"></td>
                     <td th:text="${unit.status}"></td>
                     <td>

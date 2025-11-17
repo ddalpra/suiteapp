@@ -18,4 +18,8 @@ public class UnitOfMeasurementService {
     public List<UnitOfMeasurement> findAll() {
         return unitOfMeasurementRepository.findAll();
     }
+
+    public UnitOfMeasurement save(UnitOfMeasurement unit) {
+        return unitOfMeasurementRepository.save(unit);
+    }
 }
