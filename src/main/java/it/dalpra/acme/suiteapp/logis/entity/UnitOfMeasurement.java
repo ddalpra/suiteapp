@@ -13,7 +13,7 @@ import lombok.Data;
 @Entity
 @Table(name = "unit_of_measurement")
 @Data
-public class unitOfMeasurement {
+public class UnitOfMeasurement {
     
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)

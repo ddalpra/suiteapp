@@ -1,0 +1,41 @@
+<aside class="main-sidebar sidebar-dark-primary elevation-4" th:fragment="menu(activePage)">
+    <!-- Brand Logo -->
+    <a href="#" class="brand-link">
+      <span class="brand-text font-weight-light">Acme ERP</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <li class="nav-item">
+            <a th:href="@{/}" class="nav-link" th:classappend="${activePage == 'dashboard'} ? 'active' : ''">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Dashboard
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a th:href="@{/external-endpoints}" class="nav-link" th:classappend="${activePage == 'external-endpoints'} ? 'active' : ''">
+              <i class="nav-icon fas fa-cogs"></i>
+              <p>
+                External Endpoints
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a th:href="@{/logis/articles}" class="nav-link" th:classappend="${activePage == 'articles'} ? 'active' : ''">
+              <i class="nav-icon fas fa-box"></i>
+              <p>
+                Articles
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
